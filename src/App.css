@@ -1,0 +1,130 @@
+.App {
+  background-color: #252525;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loading-spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.columns-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  margin-bottom: 50px;
+  margin-left: 65px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.content-container {
+  margin-top: 80px;
+}
+
+.item-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-text2 {
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Adicionado */
+  margin-bottom: 20px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.search-button {
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.genre-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.genre-dropdown label {
+  margin-right: 10px;
+}
+
+.genre-dropdown select {
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .columns-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-size: 20px;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.item:hover .item-text {
+  margin-top: 10px;
+}
+

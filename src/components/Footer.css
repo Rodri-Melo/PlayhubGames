@@ -1,0 +1,20 @@
+.footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+.scroll-button {
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.brand-name {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
